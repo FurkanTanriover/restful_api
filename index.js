@@ -11,8 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use("/api/users",userRouter);
 
-app.listen("3000", () => {
-  console.log("server 3000 portundan ayaklandırıldı");
+app.listen("30022", () => {
+  console.log("server 30022 portundan ayaklandırıldı");
 });
 
 app.get("/",(req,res)=>{
