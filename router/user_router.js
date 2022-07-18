@@ -4,7 +4,7 @@ const User = require("../models/user_model");
 router.get("/", async (req, res) => {
   const allUsers = await User.find({});
 
-  res.json({allUsers});
+  res.json({ allUsers });
 });
 
 router.get("/:id", (req, res) => {
