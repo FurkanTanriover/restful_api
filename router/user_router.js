@@ -20,7 +20,6 @@ router.post("/", async (req, res) => {
   } catch (err) {
     return res.status(404).json({ error: err, errorMessage: err.message });
   }
-  res.json(req.body);
 });
 
 router.patch("/:id", (req, res) => {
