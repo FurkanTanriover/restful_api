@@ -1,0 +1,35 @@
+@BASE_URL= http://localhost:3000/api
+
+
+
+GET {{BASE_URL}}
+
+###
+GET {{BASE_URL}}/users
+
+###
+GET {{BASE_URL}}/users/5
+
+###
+POST  {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "name":"furkan",
+    "password":"1234567",
+    "email":"ffttttttt",
+    "username":"furkantannffffff"
+}
+
+###
+PATCH    {{BASE_URL}}/users/5
+Content-Type: application/json
+
+{
+
+}
+
+###
+DELETE   {{BASE_URL}}/users/5
+Content-Type: application/json
+
