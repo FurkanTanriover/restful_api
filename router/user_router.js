@@ -12,16 +12,15 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-    try {
-        const addUser=new User(req.body);
-        const resp=await addUser.save();
-//        res.send(resp);
-        res.status(200).json({ data: resp });
-    } catch (error) {
-        res.status(400).json({ error: error, errorMessage: "Internal server error" }); 
-                // console.log(`user kaydedilirken hata oluştu ${error}`);
-    }
-    res.json(req.body);
+  try {
+    const addUser = new User(req.body);
+    const resp = await addUser.save();
+
+    return res.status(200).json({ data: "Eklendi" });
+  } catch (err) {
+    return res.status(404).json({ error: err, errorMessage: err.message });
+  }
+  res.json(req.body);
 });
 
 router.patch("/:id", (req, res) => {
