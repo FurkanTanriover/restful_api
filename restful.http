@@ -17,19 +17,21 @@ Content-Type: application/json
 {
     "name":"furkan",
     "password":"1234567",
-    "email":"ffttttttt",
-    "username":"furkantannffffff"
+    "email":"fftttttttt",
+    "username":"furkantannfffffff"
 }
 
 ###
-PATCH    {{BASE_URL}}/users/5
+PATCH    {{BASE_URL}}/users/62d596ec2f168d387d21b23b
 Content-Type: application/json
 
 {
-
+    "name":"adnan",
+    "username": "adnankkk",
+    "email":"dddddd"
 }
 
 ###
-DELETE   {{BASE_URL}}/users/5
+DELETE   {{BASE_URL}}/users/62d596776ef885e64ef63417
 Content-Type: application/json
 
