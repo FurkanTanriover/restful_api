@@ -2,13 +2,13 @@
 
 
 
-GET {{BASE_URL}}
+GET {{BASE_URL}}/
 
 ###
 GET {{BASE_URL}}/users
 
 ###
-GET {{BASE_URL}}/users/5
+GET {{BASE_URL}}/users/62d596ec2f168d387d21b23d
 
 ###
 POST  {{BASE_URL}}/users
@@ -17,21 +17,22 @@ Content-Type: application/json
 {
     "name":"furkan",
     "password":"1234567",
-    "email":"fftttttttt",
-    "username":"furkantannfffffff"
+    "email":"fftttttttt.dsda",
+    "username":"furrrrrrk"
 }
 
 ###
-PATCH    {{BASE_URL}}/users/62d596ec2f168d387d21b23b
+PATCH    {{BASE_URL}}/users/62d597018ccd0e4abc35a307
 Content-Type: application/json
 
 {
     "name":"adnan",
-    "username": "adnankkk",
-    "email":"dddddd"
+    "username": "adnankkkkk",
+    "email":"ddddddd@gmail.com",
+    "password":"123456789"
 }
 
 ###
-DELETE   {{BASE_URL}}/users/62d596776ef885e64ef63417
+DELETE   {{BASE_URL}}/users/62d596776ef885e64ef6341d
 Content-Type: application/json
 
