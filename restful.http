@@ -8,18 +8,28 @@ GET {{BASE_URL}}/
 GET {{BASE_URL}}/users
 
 ###
-GET {{BASE_URL}}/users/62d596ec2f168d387d21b23d
+GET {{BASE_URL}}/users/
 
 ###
 POST  {{BASE_URL}}/users
 Content-Type: application/json
 
 {
-    "name":"furkan",
-    "password":"1234567",
-    "email":"fftttttttt.dsda",
-    "username":"furrrrrrk"
+    "name":"fatih",
+    "password":"fat123",
+    "email":"fat123@gmail.com",
+    "username":"fat123fat"
 }
+
+###
+POST  {{BASE_URL}}/users/login
+Content-Type: application/json
+
+{
+    "email":"fat123@gmail.com",
+    "password":"fat123"
+}
+
 
 ###
 PATCH    {{BASE_URL}}/users/62d597018ccd0e4abc35a307
